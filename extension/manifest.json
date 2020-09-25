@@ -1,0 +1,27 @@
+{
+  "name": "Breakout Room Bot for Zoom Meetings",
+  "version": "2020.09.7",
+  "description": "Allow Attendees to switch their Zoom Meetings Breakout Rooms via Group Chat or Renames!",
+  "permissions": [
+    "activeTab",
+    "declarativeContent"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    "fuzzysort.js",
+    "rxjs.umd.js",
+    "BreakoutRoomBot.js"
+  ],
+  "icons": {
+    "128": "icon.png"
+  },
+  "manifest_version": 2
+}
